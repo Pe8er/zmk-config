@@ -1,0 +1,346 @@
+parse_config:
+  zmk_additional_includes: ["zmk-helpers/include"]
+  zmk_keycode_map:
+    BACKSPACE: '⌫'
+    BSPC: '⌫'
+    DEL: '⌦'
+    AMPERSAND: '&'
+    AMPS: '&'
+    APOS: .
+    APOSTROPHE: <
+    ASTERISK: '*'
+    ASTRK: '*'
+    AT: '@'
+    AT_SIGN: '@'
+    BACKSLASH: {t: '\', s: '|'}
+    BSLH: \
+    CARET: ^
+    COLON: ':'
+    COMMA: {t: ',', s: '<'}
+    DLLR: $
+    DOLLAR: $
+    DOT: {t: '.', s: '>'}
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: {t: '=', s: '+'}
+    EXCL: '!'
+    EXCLAMATION: '!'
+    FSLH: /
+    GRAVE: {t: '`', s: '~'}
+    GREATER_THAN: '>'
+    GT: '>'
+    HASH: '#'
+    LBKT: {t: '[', s: '{'}
+    LBRC: '{'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: {t: '-', s: '_'}
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: '|'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    PERCENT: '%'
+    PERIOD: .
+    PIPE: '|'
+    PIPE2: '|'
+    PLUS: +
+    POUND: '#'
+    PRCNT: '%'
+    QMARK: '?'
+    QUESTION: '?'
+    RBKT: {t: ']', s: '}'}
+    RBRC: '}'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: {t: ';', s: ':'}
+    SEMICOLON:  {t: ';', s: ':'}
+    SINGLE_QUOTE:  {t: '''', s: '"'}
+    SLASH: {t: '/', s: '?'}
+    SLASH: {t: '/', s: '?'}
+    SQT: ''''
+    STAR: '*'
+    TILDE: '~'
+    TILDE2: '~'
+    UNDER: _
+    UNDERSCORE: _
+    LCTRL: ⌃
+    LALT: ⎇
+    LGUI: ⌘
+    LSHFT: ⇧
+    RCTRL: ⌃
+    LEFT_CONTROL: ⌃
+    LEFT_ALT: ⎇
+    LEFT_GUI: ⌘
+    LEFT_SHFT: ⇧
+    RALT: ⎇
+    RGUI: ⌘
+    RSHFT: ⇧
+    RIGHT_CONTROL: ⌃
+    RIGHT_ALT: ⎇
+    RIGHT_GUI: ⌘
+    RIGHT_SHFT: ⇧
+    LEFT: ←
+    RIGHT: →
+    UP: ↑
+    DOWN: ↓
+    PG_UP: ⇞
+    PG_DN: ⇟
+    HOME: ↖
+    END: ↘
+    TAB: ↹
+    RETURN: '⏎'
+    ENTER: '⏎'
+    ESCAPE: '⎋'
+    C_REWIND: '⏮'
+    C_FAST_FORWARD: '⏭'
+    C_PAUSE: '⏯'
+    C_MUTE: "VOL\nMUTE"
+    C_VOLUME_DOWN: "VOL\nDOWN"
+    C_VOLUME_UP: "VOL\nUP"
+    C_BRIGHTNESS_DEC: '☀↓'
+    C_BRIGHTNESS_INC: '☀↑'
+    LA(LEFT): ↞
+    LA(RIGHT): ↠
+    LG(LEFT): ⇤
+    LG(RIGHT): ⇥
+    'LS(LC(LG(LALT)))': 'HYPER'
+    'RS(RC(RG(RALT)))': 'HYPER'
+    'LC(LG(LALT))': 'MEH'
+    'RC(RG(RALT))': 'MEH'
+    'LG(Q)': '⌘Q'
+    'LG(W)': '⌘W'
+    'LG(GRAVE)': '⌘`'
+    'LG(Z)': '⌘Z'
+    'LG(X)': '⌘X'
+    'LG(C)': '⌘C'
+    'LG(V)': '⌘V'
+    'LC(TAB)': '⌃↹'
+    'LS(LC(TAB))': '⌃⇧↹'
+    'LS(SPACE)': '⇧⎵'
+    SPACE: ⎵
+    KP_DIVIDE: '/'
+    KP_MULTIPLY: '*'
+    KP_DOT: '.'
+    KP_EQUAL: '='
+    KP_PLUS: '+'
+    KP_MINUS: '-'
+  zmk_combos:
+    combo_studio_unlock: {'hidden': true}
+    combo_bootloader: {'hidden': true}
+    tab_combo: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'height': 15}
+    enter_combo: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'height': 15}
+    combo_ng_on: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'key': 'かな', 'height': 15}
+    combo_ng_off: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'key': 'ABC', 'height': 15}
+    pipe_sign: {'align': 'right', 'key': '|'}
+    exclamation_mark: {'align': 'left'}
+    backtick: {'key': '`'}
+    at_sign: {'key': '@'}
+    gbp_sign: {'key': '£'}
+    tilde_sign: {'key': '~'}
+  raw_binding_map:
+    # These are the English letters defined here to tag them by usage:
+    '&kp Q': {'t': 'Q', 'type': 'low'}
+    '&kp W': {'t': 'W', 'type': 'medium'}
+    '&kp E': {'t': 'E', 'type': 'high'}
+    '&kp R': {'t': 'R', 'type': 'high'}
+    '&kp T': {'t': 'T', 'type': 'high'}
+    '&kp Y': {'t': 'Y', 'type': 'medium'}
+    '&kp U': {'t': 'U', 'type': 'medium-high'}
+    '&kp I': {'t': 'I', 'type': 'high'}
+    '&kp O': {'t': 'O', 'type': 'high'}
+    '&kp P': {'t': 'P', 'type': 'medium-low'}
+    '&kp A': {'t': 'A', 'type': 'high'}
+    '&kp S': {'t': 'S', 'type': 'high'}
+    '&kp D': {'t': 'D', 'type': 'medium-high'}
+    '&kp F': {'t': 'F', 'type': 'medium'}
+    '&kp G': {'t': 'G', 'type': 'medium'}
+    '&kp H': {'t': 'H', 'type': 'high'}
+    '&kp J': {'t': 'J', 'type': 'low'}
+    '&kp K': {'t': 'K', 'type': 'low'}
+    '&kp L': {'t': 'L', 'type': 'medium-high'}
+    '&kp SEMI': {'t': ';', 'type': 'low'}
+    '&kp Z': {'t': 'Z', 'type': 'low'}
+    '&kp X': {'t': 'X', 'type': 'low'}
+    '&kp C': {'t': 'C', 'type': 'medium'}
+    '&kp V': {'t': 'V', 'type': 'low'}
+    '&kp B': {'t': 'B', 'type': 'medium-low'}
+    '&kp N': {'t': 'N', 'type': 'high'}
+    '&kp M': {'t': 'M', 'type': 'medium'}
+    '&kp COMMA': {'t': ',', 'type': 'medium-low'}
+    '&kp DOT': {'t': '.', 'type': 'medium-low'}
+    # not in Bird mappings:
+    '&kp SLASH': {'t': '/', 'type': 'low'}
+    '&xquote': {'t': '''', 'type': 'medium-low'}  # this key is single & double quote
+    '&kp MINUS': {'t': '-', 'type': 'medium-low'}
+    '&kp EQUAL': {'t': '=', 'type': 'low'}
+    '&kp SPACE': {'t': '⎵', 'type': 'high'}
+     # These are the Naginata Style keys for typing in Japanese using kana:
+    '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
+    '&ng W': {'left': 'き', 'right': 'ぬ'}
+    '&ng E': {'left': 'て', 'right': 'り'}
+    '&ng R': {'left': 'し', 'right': 'め'}
+    '&ng T': {'t': '←'}
+    '&ng Y': {'t': '→'}
+    '&ng U': {'left': '⌫', 'right': 'さ'}
+    '&ng I': {'left': 'る', 'right': 'よ'}
+    '&ng O': {'left': 'す', 'right': 'え'}
+    '&ng P': {'left': 'へ', 'right': 'ゆ'}
+    '&ng A': {'left': 'ろ', 'right': 'せ'}
+    '&ng S': {'left': 'け', 'right': 'み'}
+    '&ng D': {'left': 'と', 'right': 'に'}
+    '&ng F': {'left': 'か', 'right': 'ま', 'h': '濁音'}
+    '&ng G': {'left': 'っ', 'right': 'ち'}
+    '&ng H': {'left': 'く', 'right': 'や'}
+    '&ng J': {'left': 'あ', 'right': 'の', 'h': '濁音'}
+    '&ng K': {'left': 'い', 'right': 'も'}
+    '&ng L': {'left': 'う', 'right': 'つ'}
+    '&ng SEMI': {'left': 'ー', 'right': 'ふ'}
+    '&ng Z': {'left': 'ほ'}
+    '&ng X': {'left': 'ひ'}
+    '&ng C': {'left': 'は', 'right': 'を'}
+    '&ng V': {'left': 'こ', 'right': '、', 'h': '半濁音'}
+    '&ng B': {'left': 'そ', 'right': 'む'}
+    '&ng N': {'left': 'た', 'right': 'お'}
+    '&ng M': {'left': 'な', 'right': '。', 'h': '半濁音'}
+    '&ng COMMA': {'left': 'ん', 'right': 'ね'}
+    '&ng DOT': {'left': 'ら', 'right': 'わ'}
+    '&ng SLASH': {'left': 'れ'}
+    '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
+    '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift', 'type': 'kshift'}
+    '&base_with_mod LGUI': '⌘'
+draw_config:
+  append_colon_to_layer_header: false
+  # dark_mode: auto
+  svg_style: |
+    /* inherit to force styles through use tags*/
+    svg path {
+        fill: inherit;
+    }
+    /* font and background color specifications */
+    svg.keymap {
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-size: 14px;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+        fill: #24292e;
+    }
+
+    /* default key styling */
+    rect.key {
+        fill: #f6f8fa;
+        stroke: #c9cccf;
+        stroke-width: 1;
+    }
+
+    /* color accent for combo boxes */
+    rect.combo {
+        fill: #cdf;
+    }
+
+    /* color accent for held keys */
+    rect.held, rect.combo.held {
+        fill: #fdd;
+    }
+
+    /* color accent for ghost (optional) keys */
+    rect.ghost, rect.combo.ghost {
+        stroke-dasharray: 4, 4;
+        stroke-width: 2;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+    }
+
+    /* styling for layer labels */
+    text.label {
+        font-weight: bold;
+        text-anchor: start;
+        stroke: white;
+        stroke-width: 2;
+        paint-order: stroke;
+    }
+
+    text.tap {
+        font-size: 16px;
+    }
+
+    /* styling for combo tap, and key hold/shifted label text */
+    text.combo, text.hold, text.shifted {
+        font-size: 11px;
+    }
+
+    text.hold {
+        text-anchor: middle;
+        dominant-baseline: auto;
+    }
+
+    text.shifted {
+        text-anchor: middle;
+        dominant-baseline: hanging;
+    }
+
+    /* styling for hold/shifted label text in combo box */
+    text.combo.hold, text.combo.shifted {
+        font-size: 8px;
+    }
+
+    /* lighter symbol for transparent keys */
+    text.trans {
+        fill: #7b7e81;
+    }
+
+    /* styling for combo dendrons */
+    path.combo {
+        stroke-width: 1;
+        stroke: gray;
+        fill: none;
+    }
+
+    /* Start Tabler Icons Cleanup */
+    /* cannot use height/width with glyphs */
+    .icon-tabler > path {
+        fill: inherit;
+        stroke: inherit;
+    }
+    /* hide tabler's default box */
+    .icon-tabler > path[stroke="none"][fill="none"] {
+        visibility: collapse;
+    }
+
+    rect.low {
+        fill: #355978;
+    }
+    rect.medium-low {
+        fill: #636696;
+    }
+    rect.medium {
+        fill: #9E6DA4;
+    }
+    rect.medium-high {
+        fill: #D7749D;
+    }
+    rect.high {
+        fill: #FF8585;
+    }
+
+    /* green styling for Naginata kana-shift */
+    rect.kshift {
+        fill: #00CC00;
+    }
+    text.left {
+        font-size: 18px;
+        translate: 16px 7px;
+    }
+    text.right {
+        fill: #00CC00;
+        font-size: 16px;
+        translate: -16px -10px;
+    }
