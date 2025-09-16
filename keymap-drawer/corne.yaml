@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - ↹
+  - {t: Meh+LCMD, h: ↹}
   - {t: Q, type: low}
   - {t: W, type: medium}
   - {t: E, type: high}
@@ -12,8 +12,8 @@ layers:
   - {t: I, type: high}
   - {t: O, type: high}
   - {t: P, type: medium-low}
-  - ⌫
-  - ⌃
+  - {t: \, s: '|'}
+  - {t: CAPSLOCK, h: LEFT SHIFT}
   - {t: A, type: high}
   - {t: S, type: high}
   - {t: D, type: medium-high}
@@ -25,7 +25,7 @@ layers:
   - {t: L, type: medium-high}
   - {t: ;, type: low}
   - ''''
-  - ⇧
+  - ⌃
   - {t: Z, type: low}
   - {t: X, type: low}
   - {t: C, type: medium}
@@ -39,11 +39,11 @@ layers:
   - ESC
   - ⎇
   - LCMD
-  - {t: ⎵, h: NUM/MEDIA}
+  - {t: ⎵, h: Num}
   - {t: RET, h: SYM}
-  - RCMD
+  - ⌫
   - ⎇
-  NUM/MEDIA:
+  Num:
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -59,35 +59,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOL DN
-  - VOL UP
-  - MUTE
   - {t: ▽, type: trans}
-  - ←
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '-', type: medium-low}
+  - +
+  - {t: '=', type: low}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ↑
-  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
-  - NEXT
-  - PP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ←, h: SYS}
   - ↓
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ⎇
-  - {t: ▽, type: trans}
-  - {t: ⎵, h: SYS, type: held}
-  - RET
-  - {t: ▽, type: trans}
-  - RCMD
+  - →
   SYM:
-  - {t: ▽, type: trans}
+  - {t: '`', s: '~'}
   - '!'
   - '@'
   - '#'
@@ -98,37 +98,37 @@ layers:
   - KP ASTERISK
   - (
   - )
-  - ⌫
-  - ⌃
-  - ←
-  - ↑
-  - →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '-', type: medium-low}
   - {t: '=', type: low}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - \
-  - {t: '`', s: '~'}
-  - ⇧
   - {t: ▽, type: trans}
-  - ↓
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ↑
   - _
   - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - ⎇
   - {t: ▽, type: trans}
-  - {t: ⎵, h: SYS}
-  - {t: RET, type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - {t: →, h: SYS}
+  - {type: held}
   - RCMD
+  - ⎇
   SYS:
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
@@ -166,9 +166,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
-  - ⎇
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ⎵, h: SYS, type: held}
-  - RET
+  - {type: held}
   - {t: ▽, type: trans}
-  - RCMD
+  - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: ⎋
